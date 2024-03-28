@@ -50,7 +50,7 @@ namespace ApiUsers.Controllers
         {
             try 
             {
-               var response=await _service.Add(user);
+               await _service.Add(user);
                return RedirectToAction("Index");
             }
             catch (Exception e) 
